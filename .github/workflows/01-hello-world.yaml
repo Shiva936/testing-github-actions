@@ -1,8 +1,14 @@
 name: hello-world
 on: push
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
+  hello:
     steps:
-      - name: my-step
+      - name: echo world
         run: echo "Hello World!"
+  list:
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: List All Files
+        run: ls -al
