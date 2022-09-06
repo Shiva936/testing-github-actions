@@ -1,12 +1,14 @@
 name: hello-world
 on: push
 jobs:
-  runs-on: ubuntu-latest
   hello:
+    runs-on: ubuntu-latest
     steps:
       - name: echo world
         run: echo "Hello World!"
+
   list:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
