@@ -8,6 +8,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: mkdir -p path/to/artifact
       - run: echo "Hello!" > path/to/artifact/world.txt
+      - run: pwd
       - uses: actions/upload-artifact@v3
         with:
           name: my-artifact
@@ -24,3 +25,4 @@ jobs:
       - run: pwd
       - run: ls
       - run: ls -al path/to/artifact/
+    
