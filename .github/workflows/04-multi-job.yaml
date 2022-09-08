@@ -22,5 +22,5 @@ jobs:
         with:
           name: my-artifact
       - run: pwd
+      - run: ls
       - run: ls -al path/to/artifact/
-
