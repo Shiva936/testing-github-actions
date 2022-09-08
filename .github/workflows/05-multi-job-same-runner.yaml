@@ -1,0 +1,10 @@
+name: multi-job-same-runner
+on: push
+
+jobs:
+  job:
+    name: Job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: action
+        run: ls
