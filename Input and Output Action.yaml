@@ -1,4 +1,7 @@
 name: "Input and Output"
+on: 
+  workflow_dispatch:
+    push
 description: "Inputs from and Outputs to Files"
 inputs:
   file-path: # id of input
